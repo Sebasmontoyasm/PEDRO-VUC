@@ -1,13 +1,15 @@
 {
-  "name": "PEDRO-RAD",
+  "name": "PEDRO-VUC",
   "description": "RE ENVIO DE ACUSES DE RECIVIDO CON PLATAFORMA DOC FLOW",
-  "main": "FLUJO PRINCIPAL.xaml",
+  "main": "PEDRO-VUC.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.18.0-preview]",
+    "UiPath.Database.Activities": "[1.7.1]",
+    "UiPath.GSuite.Activities": "[2.0.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
     "UiPath.System.Activities": "[23.2.0-preview]",
     "UiPath.Testing.Activities": "[23.2.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.2.0-preview]"
+    "UiPath.UIAutomation.Activities": "[23.2.0-preview]",
+    "UiPath.WebAPI.Activities": "[1.13.3]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -48,8 +50,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "FLUJO PRINCIPAL.xaml",
-      "uniqueId": "dd92d42a-18be-478b-b7a8-054d0d1f5d3a",
+      "filePath": "PEDRO-VUC.xaml",
+      "uniqueId": "b907351b-edb2-4149-b193-eddab922afa6",
       "input": [],
       "output": []
     }
