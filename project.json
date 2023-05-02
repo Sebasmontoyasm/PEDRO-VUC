@@ -4,11 +4,15 @@
   "main": "PEDRO-VUC.xaml",
   "dependencies": {
     "UiPath.Database.Activities": "[1.7.1]",
+    "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.GSuite.Activities": "[2.0.1]",
+    "UiPath.IntelligentOCR.Activities": "[6.9.0]",
     "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.OCR.Activities": "[3.15.1]",
+    "UiPath.PDF.Activities": "[3.14.0]",
     "UiPath.System.Activities": "[23.2.0-preview]",
     "UiPath.Testing.Activities": "[23.2.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.2.0-preview]",
+    "UiPath.UIAutomation.Activities": "[23.4.4]",
     "UiPath.WebAPI.Activities": "[1.13.3]"
   },
   "webServices": [],
