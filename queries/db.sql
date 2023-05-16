@@ -96,9 +96,14 @@ informe del dia de hoy y lo guarde en un excel para enviar via correo.
 */
 DELIMITER //
 DROP PROCEDURE IF EXISTS reporteDiario//
-CREATE PROCEDURE reporteDiario(IN in_acuse VARCHAR(50))
+CREATE PROCEDURE reporteDiario()
 BEGIN 
-    SELECT * 
+    SELECT 
+    subject AS Email,
+    rad AS Radicado,
+    status AS Proceso,
+    insercion AS Fecha,
+    uid AS Lote
     FROM acuses
     WHERE insercion >= CURRENT_DATE();
 END//
