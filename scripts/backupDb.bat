@@ -1,1 +1,1 @@
-start cmd /k "xcopy "C:\xampp\mysql\data" "C:\Users\PEDRO-VUC\Documents\VUC\PEDRO-VUC\backup" /C /s /h /-y /y && exit"
+start cmd /k "xcopy "C:\xampp\mysql\data" "C:\Users\PEDRO-VUC\Documents\PEDRO-VUC\backup" /d /C /s /h /-y /y && exit"

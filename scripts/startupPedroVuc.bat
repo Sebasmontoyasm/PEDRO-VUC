@@ -4,7 +4,7 @@ echo Ejecutar PEDRO-VUC
 :
 @echo off
 
-cd C:\Users\RADIAN\AppData\Local\Programs\UiPath\Studio
+cd C:\Users\PEDRO-VUC\AppData\Local\Programs\UiPath\Studio
 UiRobot.exe -p PEDRO-VUC
 
 TIMEOUT /T 15
