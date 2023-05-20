@@ -823,13 +823,13 @@
                                       <av:PointCollection x:Key="ConnectorLocation">890,861.6 890,928.4</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="Inicialización" sap:VirtualizedContainerService.HintSize="496,529.6" sap2010:WorkflowViewState.IdRef="Sequence_575">
+                                  <Sequence DisplayName="Inicialización" sap:VirtualizedContainerService.HintSize="512,560" sap2010:WorkflowViewState.IdRef="Sequence_575">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_350">
+                                    <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_350">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[checkControl]</OutArgument>
                                       </Assign.To>
@@ -837,7 +837,7 @@
                                         <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_373">
+                                    <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_373">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[checkRecepcion]</OutArgument>
                                       </Assign.To>
@@ -845,7 +845,7 @@
                                         <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_374">
+                                    <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_374">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[checkDocxFlow]</OutArgument>
                                       </Assign.To>
@@ -853,40 +853,34 @@
                                         <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_16">
-                                      <ui:CommentOut.Body>
-                                        <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_723">
-                                          <Sequence DisplayName="Notificación de Inicio" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_722">
-                                            <Sequence.Variables>
-                                              <Variable x:TypeArguments="x:String" Default="El robot ha iniciado su proceso diario y empezara a leer y subir los radicados." Name="msgStart" />
-                                            </Sequence.Variables>
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <Assign sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_464">
-                                              <Assign.To>
-                                                <OutArgument x:TypeArguments="x:String">[in_dateStart]</OutArgument>
-                                              </Assign.To>
-                                              <Assign.Value>
-                                                <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("dd-MM-yyyy HH:mm")]</InArgument>
-                                              </Assign.Value>
-                                            </Assign>
-                                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="&lt;div id=':ib' class='Am Al editable LW-avf tS-tW' hidefocus='true' aria-label='Cuerpo del mensaje' g_editable='true' role='textbox' aria-multiline='true' contenteditable='true' tabindex='1' style='direction: ltr; min-height: 129px;' spellcheck='false' aria-owns=':l7' aria-controls=':l7'&gt;&#xA;&#x9;El robot ha iniciado su ejecución diaria, el proceso se vera reflejado en el correo de recepcion de radicados.&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;br&gt;&#xA;   &lt;/div&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;Solutions Systems &amp; Camara de Comercio de Ibagué&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;" DisplayName="Envió correo de Inicio" Email="ccibague@ccibague.org" EnableSSL="True" sap:VirtualizedContainerService.HintSize="433.6,274.4" sap2010:WorkflowViewState.IdRef="SendMail_30" IgnoreCRL="False" IsBodyHtml="True" Password="Lhh07102021" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;PEDRO VUC HA INICIADO SU JORNADA A LAS: &quot;+in_dateStart]" To="[jsonConfBot(&quot;MailToAlert&quot;).ToString]" UseOAuth="False">
-                                              <ui:SendMail.Files>
-                                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
-                                              </ui:SendMail.Files>
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                            </ui:SendMail>
-                                          </Sequence>
-                                        </Sequence>
-                                      </ui:CommentOut.Body>
-                                    </ui:CommentOut>
+                                    <Sequence DisplayName="Notificación de Inicio" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_724">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Default="El robot ha iniciado su proceso diario y empezara a leer y subir los radicados." Name="msgStart" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_464">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[in_dateStart]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("dd-MM-yyyy HH:mm")]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="&lt;div id=':ib' class='Am Al editable LW-avf tS-tW' hidefocus='true' aria-label='Cuerpo del mensaje' g_editable='true' role='textbox' aria-multiline='true' contenteditable='true' tabindex='1' style='direction: ltr; min-height: 129px;' spellcheck='false' aria-owns=':l7' aria-controls=':l7'&gt;&#xA;&#x9;El robot ha iniciado su ejecución diaria, el proceso se vera reflejado en el correo de recepcion de radicados.&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;br&gt;&#xA;   &lt;/div&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;Solutions Systems &amp; Camara de Comercio de Ibagué&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;" DisplayName="Envió correo de Inicio" Email="ccibague@ccibague.org" EnableSSL="True" sap:VirtualizedContainerService.HintSize="433.6,274.4" sap2010:WorkflowViewState.IdRef="SendMail_30" IgnoreCRL="False" IsBodyHtml="True" Password="Lhh07102021" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;PEDRO VUC HA INICIADO SU JORNADA A LAS: &quot;+in_dateStart]" To="[jsonConfBot(&quot;MailToAlert&quot;).ToString]" UseOAuth="False">
+                                        <ui:SendMail.Files>
+                                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
+                                        </ui:SendMail.Files>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:SendMail>
+                                    </Sequence>
                                   </Sequence>
                                   <FlowStep.Next>
                                     <FlowStep x:Name="__ReferenceID3">
