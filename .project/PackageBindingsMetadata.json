@@ -555,12 +555,12 @@
         },
         "Values": {},
         "Arguments": {
-          "CronExpression": {
-            "Value": "CronExpression",
-            "ValueSource": "Property"
-          },
           "TimeZone": {
             "Value": "TimeZone",
+            "ValueSource": "Property"
+          },
+          "CronExpression": {
+            "Value": "CronExpression",
             "ValueSource": "Property"
           }
         },
